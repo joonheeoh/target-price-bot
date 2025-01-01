@@ -1,0 +1,26 @@
+{
+  "taskPeriodInMs": 6000,
+  "walletPrivateKey": "0x...PRIVATE_KEY...",
+  "chainApiUrl": "https://mainnet.base.org",
+  "baseToken": "0xd85EFF20288ca72eA9eEcFFb428F89EE5066CA5C",
+  "targetToken": "0x9252384e10Ba6beae1A52DBb2a3BEca2592268D9",
+  "poolFee": 3000,
+  "poolContractAddr": "0xB2964709082830f48DCf98F161b8F5BEFE1419b3",
+  "quoterContractAddr": "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
+  "swapRouterContractAddr": "0x2626664c2603336E57B271c5C0b26F421741e481",
+  "targetPrice": 20,
+  "priceTolerance": 0.05,
+  "notificationConfig": {
+    "email": {
+      "sender": "",
+      "receivers": [ "RECEIVER-EMAIL" ],
+      "smtp": {
+        "smtpHost": "smtp.gmail.com",
+        "smtpPort": 465,
+        "smtpSecure": true,
+        "smtpUser": "YOURNAME@gmail.com",
+        "smtpPass": "APP-PASSWORD"
+      }
+    }
+  }
+}
