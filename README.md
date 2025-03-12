@@ -56,8 +56,8 @@ Typescript 컴파일을 위한 설정 파일인 tsconfig.json이 작성되어 �
 | targetToken | Uniswap V3 Pool을 구성하는 토큰 중 가격 관리의 대상 토큰. Uniswap V3 Pool의 token0에 해당한다. |
 | poolFee | Uniswap V3 Pool의 수수료. 단위는 백만분의 일이라서 3000은 0.003(0.3%)를 의미 |
 | poolContractAddr | Uniswap V3 Pool Contract의 주소. targetToken을 token0로, baseToken을 token1으로 가져야 한다. |
-| quoterContractAddr | Uniswap V3 Quoter Contract의 주소|
-| swapRouterContractAddr | Uniswap V3 Router Contract의 주소|
+| quoterContractAddr | Uniswap V3 Quoter Contract(QuoterV2)의 주소|
+| swapRouterContractAddr | Uniswap V3 Router Contract(SwapRouter02)의 주소|
 | targetPrice | targetToken의 baseToken 기준 가격의 목표 가격  |
 | priceTolerance | targetToken의 baseToken 기준 가격이 targetPrice에서 얼마나 벗어날 수 있는지 지정. 예를 들어, 0.05의 값은 targetToken의 가격이 targetPrice로부터 -5% ~ 5% 구간에 위치해야 한다는 의미. targetToken의 가격이 이 구간을 벗어날 경우 가격을 해당 구간으로 복귀시키기 위해 필요한 매매(buy or sell)를 실행한다. |
 | notificationConfig | Bot이 활동하면서 발생한 주요 사건(예: 매매실행)에 대해 관리자에게 알리기 위한 설정 정보 |
